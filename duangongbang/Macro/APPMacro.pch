@@ -1,0 +1,117 @@
+//
+//  APPMacro.pch
+//  loginDemo
+//
+//  Created by apple on 15/1/3.
+//  Copyright (c) 2015年 apple. All rights reserved.
+//
+
+
+//      全局移除LOG
+//#ifdef DEBUG
+//
+//#   define DLog(...) LOG(__VA_ARGS__)
+//
+//#else
+//
+//#   define DLog(...)
+//
+//#endif
+
+#if DEBUG
+
+#else
+
+#define NSLog(...)
+
+#endif
+
+
+#ifndef loginDemo_APPMacro_pch
+#define loginDemo_APPMacro_pch
+
+
+#endif
+
+#define MAS_SHORTHAND
+#define MAS_SHORTHAND_GLOBALS
+
+#import "Masonry.h"
+
+//      常用的类
+#import "AllSize.h"
+#import "AllColor.h"
+#import "GetVersion.h"
+#import "AllKeyAndText.h"
+#import "MBProgressHUD.h"
+#import "UIView+CornerRadius.h"
+#import "ShareDataSource.h"
+#import "UIButton+Extension.h"
+#import <BmobSDK/Bmob.h>
+#import "CommonServers.h"
+#import "HLAlertController.h"
+#import "chatDemoUIDefine.h"
+#import "EaseMob.h"
+#import "UIViewController+HUD.h"
+#import "Masonry.h"
+
+//      AppDelegate
+#define APPDELEGATE [(AppDelegate*)[UIApplication sharedApplication]  delegate]
+
+//      Service
+#define kSERVICE @"com.duangongbang"
+
+#define kMerchantItem @"http://www.duangongbang.com/app/companyclause.html"
+
+#define kUserItem @"http://www.duangongbang.com/app/userclause.html"
+#define kUserHelper @"http://www.duangongbang.com/app/userhelp.html"
+#define kAboutUs @"http://www.duangongbang.com/app/aboutus.html"
+
+#define kKefuUrl @"http://www.duangongbang.com/app/kefu.html"
+
+#define kWorkUrlPrefix @"http://www.duangongbang.com/sharev3/work.aspx?id="
+
+#define kAPPID @"979141222"
+
+//      NSUserDefaults 实例化
+#define USER_DEFAULT [NSUserDefaults standardUserDefaults]
+
+//      G－C－D
+#define BACK(block) dispatch_async(dispatch_get_global_queue(DISPATCH_QUEUE_PRIORITY_DEFAULT, 0), block)
+#define MAIN(block) dispatch_async(dispatch_get_main_queue(),block)
+
+//      设置第一相应收回键盘
+#define FIRST_RESPONDER [[UIApplication sharedApplication] sendAction:@selector(resignFirstResponder) to:nil from:nil forEvent:nil]
+
+#define kFontName @"NotoSansHans-DemiLight"
+
+#define kProgressTime 1.2
+
+#ifdef DEBUG
+#define LOG(...) NSLog(__VA_ARGS__)
+#define LOG_METHOD NSLog(@"%s", __func__)
+#else
+#define LOG(...)
+#define LOG_METHOD
+#endif
+
+#define SESSIONID [[NSUserDefaults standardUserDefaults] stringForKey:@"sessionid"]
+#define USERID [[NSUserDefaults standardUserDefaults] stringForKey:@"userid"]
+#define RCID [[NSUserDefaults standardUserDefaults] stringForKey:@"rcid"]
+#define NIKCNAME [[NSUserDefaults standardUserDefaults] stringForKey:@"nickname"]
+
+
+
+#define kScreen_Width [UIScreen mainScreen].bounds.size.width
+#define kScreen_Height [UIScreen mainScreen].bounds.size.height
+#define kScreen_Bounds [UIScreen mainScreen].bounds
+
+#define CustomUIFont(fontSize) [UIFont fontWithName:@"AppleGothic" size:fontSize]
+#define RCColor(r, g, b) [UIColor colorWithRed:(r)/255.0 green:(g)/255.0 blue:(b)/255.0 alpha:1.0]
+
+#define blueAlpha  RCColor(14, 197, 186)
+
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+

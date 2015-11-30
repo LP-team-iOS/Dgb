@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="MYTableViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="54"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="53"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="商家信息" translatesAutoresizingMaskIntoConstraints="NO" id="oWs-Sb-o22" userLabel="imageView">
+                        <rect key="frame" x="32" y="14" width="25" height="25"/>
+                        <animations/>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aty-RN-aUz" userLabel="label">
+                        <rect key="frame" x="73" y="16" width="42" height="21"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button hidden="YES" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zgA-R1-X9d">
+                        <rect key="frame" x="247" y="16" width="49" height="23"/>
+                        <animations/>
+                        <fontDescription key="fontDescription" type="system" pointSize="9"/>
+                        <state key="normal" title="version 3.2">
+                            <color key="titleColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                        </state>
+                    </button>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="zgA-R1-X9d" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="3xT-0X-tL5"/>
+                    <constraint firstItem="oWs-Sb-o22" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="952-uM-eCi"/>
+                    <constraint firstItem="aty-RN-aUz" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="EJU-6W-N2X"/>
+                    <constraint firstItem="aty-RN-aUz" firstAttribute="leading" secondItem="oWs-Sb-o22" secondAttribute="trailing" constant="16" id="fP2-Qe-l7k"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="zgA-R1-X9d" secondAttribute="trailing" constant="16" id="glS-E4-TVq"/>
+                    <constraint firstItem="oWs-Sb-o22" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="32" id="hy2-oT-FmL"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <connections>
+                <outlet property="myButton" destination="zgA-R1-X9d" id="gAz-X6-Ky7"/>
+                <outlet property="myImageView" destination="oWs-Sb-o22" id="Zk8-Ck-u5O"/>
+                <outlet property="myTextLabel" destination="aty-RN-aUz" id="MCr-3f-Smd"/>
+            </connections>
+            <point key="canvasLocation" x="291" y="239"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="商家信息" width="25" height="25"/>
+    </resources>
+</document>

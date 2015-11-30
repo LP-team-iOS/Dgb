@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NotoSansHans-DemiLight.otf">
+            <string>NotoSansHans-DemiLight</string>
+            <string>NotoSansHans-DemiLight</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="needCellIdentifier" rowHeight="166" id="dPp-Me-Txa" customClass="NeedKnownViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="138"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="dPp-Me-Txa" id="VLJ-bi-f3q">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="137.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="TvV-gH-pWY" userLabel="Content">
+                        <rect key="frame" x="16" y="4" width="288" height="129.5"/>
+                        <userGuides>
+                            <userLayoutGuide location="18" affinity="minY"/>
+                            <userLayoutGuide location="52" affinity="minY"/>
+                            <userLayoutGuide location="146" affinity="minX"/>
+                            <userLayoutGuide location="142" affinity="minY"/>
+                        </userGuides>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cTd-j0-Fsy">
+                                <rect key="frame" x="16" y="25" width="256" height="1"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="zo4-Go-xUZ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansHans-DemiLight" family="Noto Sans S Chinese" pointSize="14"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="报名须知" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gj2-Eu-BZq">
+                                <rect key="frame" x="112" y="18" width="65" height="16"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="16" id="OtN-IQ-l2g"/>
+                                    <constraint firstAttribute="width" constant="65" id="mLN-Rk-9lu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansHans-DemiLight" family="Noto Sans S Chinese" pointSize="14"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="OtN-IQ-l2g"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="s8t-WC-aSW">
+                                <rect key="frame" x="16" y="70" width="257" height="42"/>
+                                <animations/>
+                                <color key="backgroundColor" red="1" green="0.90196078430000004" blue="0.90980392160000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="凡商家收取报名费用等异常需求，不可相信，请联系客服进行举报！">
+                                        <attributes>
+                                            <color key="NSColor" red="0.97254901960784312" green="0.3843137254901961" blue="0.43529411764705883" alpha="1" colorSpace="calibratedRGB"/>
+                                            <font key="NSFont" size="12" name="PingFangSC-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="y2a-LG-giP">
+                                <rect key="frame" x="16" y="42" width="256" height="20"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="20" id="oSH-Xt-eWm"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" red="0.4431372549" green="0.4431372549" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="y2a-LG-giP" firstAttribute="top" secondItem="gj2-Eu-BZq" secondAttribute="bottom" constant="8" id="5s9-Vm-WRI"/>
+                            <constraint firstItem="cTd-j0-Fsy" firstAttribute="centerY" secondItem="gj2-Eu-BZq" secondAttribute="centerY" id="Bwo-Zk-wOv"/>
+                            <constraint firstItem="gj2-Eu-BZq" firstAttribute="top" secondItem="TvV-gH-pWY" secondAttribute="top" constant="18" id="CYJ-JL-fdc"/>
+                            <constraint firstItem="s8t-WC-aSW" firstAttribute="top" secondItem="y2a-LG-giP" secondAttribute="bottom" constant="8" id="FNs-wr-VPm"/>
+                            <constraint firstAttribute="bottom" secondItem="s8t-WC-aSW" secondAttribute="bottom" constant="17.5" id="FaJ-CV-sO9"/>
+                            <constraint firstAttribute="trailing" secondItem="y2a-LG-giP" secondAttribute="trailing" constant="16" id="TMQ-FC-leA"/>
+                            <constraint firstItem="y2a-LG-giP" firstAttribute="leading" secondItem="TvV-gH-pWY" secondAttribute="leading" constant="16" id="UCD-Qd-PTc"/>
+                            <constraint firstItem="s8t-WC-aSW" firstAttribute="leading" secondItem="TvV-gH-pWY" secondAttribute="leading" constant="16" id="Yt9-3T-Ogh"/>
+                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="129.5" id="a5I-JA-uzc"/>
+                            <constraint firstAttribute="trailing" secondItem="s8t-WC-aSW" secondAttribute="trailing" constant="15" id="fuK-Hx-9gZ"/>
+                            <constraint firstItem="cTd-j0-Fsy" firstAttribute="leading" secondItem="y2a-LG-giP" secondAttribute="leading" id="oPT-xG-3jg"/>
+                            <constraint firstItem="cTd-j0-Fsy" firstAttribute="trailing" secondItem="y2a-LG-giP" secondAttribute="trailing" id="rAl-MV-t6H"/>
+                            <constraint firstItem="gj2-Eu-BZq" firstAttribute="centerX" secondItem="TvV-gH-pWY" secondAttribute="centerX" id="xLU-EW-RtP"/>
+                            <constraint firstItem="y2a-LG-giP" firstAttribute="top" secondItem="cTd-j0-Fsy" secondAttribute="bottom" constant="16" id="xr3-eK-VZC"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="TvV-gH-pWY" secondAttribute="bottom" constant="4" id="6a7-Sl-o4F"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TvV-gH-pWY" secondAttribute="bottom" constant="-4" id="M9f-v9-JQn"/>
+                    <constraint firstItem="TvV-gH-pWY" firstAttribute="leading" secondItem="VLJ-bi-f3q" secondAttribute="leadingMargin" constant="8" id="Nfg-kc-QAo"/>
+                    <constraint firstItem="TvV-gH-pWY" firstAttribute="centerX" secondItem="VLJ-bi-f3q" secondAttribute="centerX" id="OOU-Ua-ske"/>
+                    <constraint firstItem="TvV-gH-pWY" firstAttribute="top" secondItem="VLJ-bi-f3q" secondAttribute="top" constant="4" id="VdJ-nc-PoH"/>
+                    <constraint firstItem="TvV-gH-pWY" firstAttribute="top" secondItem="VLJ-bi-f3q" secondAttribute="topMargin" constant="-4" id="Vft-yH-WVE"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="TvV-gH-pWY" secondAttribute="bottom" constant="-4.5" id="dkz-bE-f4Q"/>
+                    <constraint firstItem="TvV-gH-pWY" firstAttribute="leading" secondItem="VLJ-bi-f3q" secondAttribute="leading" constant="16" id="ol7-Xp-Ckj"/>
+                    <constraint firstAttribute="trailing" secondItem="TvV-gH-pWY" secondAttribute="trailing" constant="16" id="vMR-Nf-Q81"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="bgView" destination="TvV-gH-pWY" id="qAB-fZ-Yoy"/>
+                <outlet property="lbApplyKnowWarning" destination="s8t-WC-aSW" id="pHt-ie-Lrh"/>
+                <outlet property="lbApplyKnown" destination="y2a-LG-giP" id="NNy-sH-q9a"/>
+            </connections>
+            <point key="canvasLocation" x="440" y="286"/>
+        </tableViewCell>
+    </objects>
+</document>

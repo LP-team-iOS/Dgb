@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NotoSansHans-DemiLight.otf">
+            <string>NotoSansHans-DemiLight</string>
+            <string>NotoSansHans-DemiLight</string>
+            <string>NotoSansHans-DemiLight</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="workCellIdentifier" rowHeight="166" id="KGk-i7-Jjw" customClass="WorkViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="148"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="147.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="me3-gd-PTE" userLabel="Content">
+                        <rect key="frame" x="16" y="4" width="288" height="140"/>
+                        <userGuides>
+                            <userLayoutGuide location="18" affinity="minY"/>
+                            <userLayoutGuide location="50" affinity="minY"/>
+                            <userLayoutGuide location="146" affinity="minX"/>
+                            <userLayoutGuide location="142" affinity="minY"/>
+                        </userGuides>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Igg-wT-2uV">
+                                <rect key="frame" x="16" y="25" width="256" height="1"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="zch-1D-WAA"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansHans-DemiLight" family="Noto Sans S Chinese" pointSize="14"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="工作详情" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XAN-W8-965">
+                                <rect key="frame" x="112" y="18" width="65" height="16"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="D2V-Nc-VQw"/>
+                                    <constraint firstAttribute="height" constant="16" id="mlj-q9-3pt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansHans-DemiLight" family="Noto Sans S Chinese" pointSize="14"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="mlj-q9-3pt"/>
+                                    </mask>
+                                </variation>
+                            </label>
+                            <label userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" preferredMaxLayoutWidth="0.0" translatesAutoresizingMaskIntoConstraints="NO" id="3UJ-HH-BXL">
+                                <rect key="frame" x="16" y="50" width="256" height="77.5"/>
+                                <animations/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="47" id="V5z-g9-Odt"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansHans-DemiLight" family="Noto Sans S Chinese" pointSize="12"/>
+                                <color key="textColor" red="0.4431372549" green="0.4431372549" blue="0.4431372549" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Igg-wT-2uV" firstAttribute="centerY" secondItem="XAN-W8-965" secondAttribute="centerY" id="1ma-ad-5ec"/>
+                            <constraint firstItem="Igg-wT-2uV" firstAttribute="leading" secondItem="3UJ-HH-BXL" secondAttribute="leading" id="5jq-CX-exT"/>
+                            <constraint firstItem="3UJ-HH-BXL" firstAttribute="leading" secondItem="me3-gd-PTE" secondAttribute="leading" constant="16" id="ETB-Bl-fb7"/>
+                            <constraint firstItem="XAN-W8-965" firstAttribute="top" secondItem="me3-gd-PTE" secondAttribute="top" constant="18" id="HRq-hG-sYe"/>
+                            <constraint firstItem="3UJ-HH-BXL" firstAttribute="top" secondItem="Igg-wT-2uV" secondAttribute="bottom" constant="24" id="LsQ-9K-Jnk"/>
+                            <constraint firstItem="3UJ-HH-BXL" firstAttribute="top" secondItem="XAN-W8-965" secondAttribute="bottom" constant="16" id="Whf-7y-AWK"/>
+                            <constraint firstItem="XAN-W8-965" firstAttribute="centerX" secondItem="me3-gd-PTE" secondAttribute="centerX" id="Yov-9a-y54"/>
+                            <constraint firstAttribute="trailing" secondItem="3UJ-HH-BXL" secondAttribute="trailing" constant="16" id="Z3m-9U-2ac"/>
+                            <constraint firstItem="Igg-wT-2uV" firstAttribute="trailing" secondItem="3UJ-HH-BXL" secondAttribute="trailing" id="eX2-Pw-MF7"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                <constraints>
+                    <constraint firstItem="me3-gd-PTE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="JsM-zm-hrh"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="3UJ-HH-BXL" secondAttribute="bottom" constant="8" id="MbA-66-hti"/>
+                    <constraint firstItem="me3-gd-PTE" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="NrJ-s2-Coz"/>
+                    <constraint firstItem="me3-gd-PTE" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="TaS-gD-ara"/>
+                    <constraint firstAttribute="bottomMargin" secondItem="me3-gd-PTE" secondAttribute="bottom" constant="-4.5" id="fsj-lA-uBt"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="bgView" destination="me3-gd-PTE" id="fMt-XV-ZDf"/>
+                <outlet property="lbContent" destination="3UJ-HH-BXL" id="hue-f4-pA3"/>
+            </connections>
+            <point key="canvasLocation" x="565" y="307"/>
+        </tableViewCell>
+    </objects>
+</document>

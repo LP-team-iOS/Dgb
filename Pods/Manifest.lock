@@ -1,0 +1,16 @@
+PODS:
+  - BmobSDK (1.6.5)
+  - MJRefresh (3.0.1)
+  - pop (1.0.7)
+
+DEPENDENCIES:
+  - BmobSDK
+  - MJRefresh
+  - pop (= 1.0.7)
+
+SPEC CHECKSUMS:
+  BmobSDK: 9928a9135a3a7823c6d8bd2bcd9baffeb8e6289a
+  MJRefresh: ca22bb7197c4a17a0491763773cd5cb106b2a810
+  pop: 628ffc631644601567ee8bfaaaea493ebd7d0923
+
+COCOAPODS: 0.38.2

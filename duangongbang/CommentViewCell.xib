@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NotoSansHans-DemiLight.otf">
+            <string>NotoSansHans-DemiLight</string>
+            <string>NotoSansHans-DemiLight</string>
+            <string>NotoSansHans-DemiLight</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="commentCellIdentifier" id="KGk-i7-Jjw" customClass="CommentViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="132"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="131.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="SES-Rc-5pa" userLabel="Coment">
+                        <rect key="frame" x="16" y="4" width="288" height="124"/>
+                        <userGuides>
+                            <userLayoutGuide location="5" affinity="minY"/>
+                            <userLayoutGuide location="32" affinity="minY"/>
+                            <userLayoutGuide location="51" affinity="minY"/>
+                            <userLayoutGuide location="106" affinity="minY"/>
+                            <userLayoutGuide location="144" affinity="minX"/>
+                        </userGuides>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="n4J-wU-v1I">
+                                <rect key="frame" x="16" y="23" width="256" height="1"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="NotoSansHans-DemiLight" family="Noto Sans S Chinese" pointSize="14"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="你怎么看" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Cr2-PG-fan">
+                                <rect key="frame" x="112" y="16" width="65" height="16"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="65" id="5OQ-Ay-Mvq"/>
+                                    <constraint firstAttribute="height" constant="16" id="PvZ-Eb-lIO"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansHans-DemiLight" family="Noto Sans S Chinese" pointSize="14"/>
+                                <color key="textColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ds6-k9-tOX">
+                                <rect key="frame" x="48" y="58" width="193" height="28"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="LgO-zR-GZM"/>
+                                    <constraint firstAttribute="width" constant="193" id="UcT-OR-Md5"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="暂时没有任何评论">
+                                        <attributes>
+                                            <color key="NSColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" metaFont="cellTitle"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="2"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button hidden="YES" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VV1-IK-NHO" userLabel="BtnCommentShow">
+                                <rect key="frame" x="72" y="56" width="144" height="36"/>
+                                <animations/>
+                                <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="36" id="hHj-bQ-3if"/>
+                                    <constraint firstAttribute="width" constant="144" id="kHT-so-keQ"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansHans-DemiLight" family="Noto Sans S Chinese" pointSize="14"/>
+                                <state key="normal" title="查看评论">
+                                    <color key="titleColor" red="0.80000000000000004" green="0.80000000000000004" blue="0.80000000000000004" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Ds6-k9-tOX" firstAttribute="centerX" secondItem="SES-Rc-5pa" secondAttribute="centerX" id="AKo-t6-QVq"/>
+                            <constraint firstItem="Ds6-k9-tOX" firstAttribute="centerX" secondItem="VV1-IK-NHO" secondAttribute="centerX" id="C7a-gX-YI6"/>
+                            <constraint firstItem="n4J-wU-v1I" firstAttribute="centerX" secondItem="Cr2-PG-fan" secondAttribute="centerX" constant="-0.5" id="EsU-Wb-b5t"/>
+                            <constraint firstItem="Ds6-k9-tOX" firstAttribute="top" secondItem="Cr2-PG-fan" secondAttribute="bottom" constant="26" id="GGs-qg-2x8"/>
+                            <constraint firstItem="Cr2-PG-fan" firstAttribute="top" secondItem="SES-Rc-5pa" secondAttribute="top" constant="16" id="Hdd-pq-4nK"/>
+                            <constraint firstItem="VV1-IK-NHO" firstAttribute="top" secondItem="n4J-wU-v1I" secondAttribute="bottom" constant="32" id="TrG-wN-Rn0"/>
+                            <constraint firstItem="n4J-wU-v1I" firstAttribute="centerY" secondItem="Cr2-PG-fan" secondAttribute="centerY" constant="-0.5" id="aLS-tz-wJ1"/>
+                            <constraint firstItem="n4J-wU-v1I" firstAttribute="leading" secondItem="SES-Rc-5pa" secondAttribute="leading" constant="16" id="jlh-yE-KXj"/>
+                            <constraint firstItem="Ds6-k9-tOX" firstAttribute="centerX" secondItem="Cr2-PG-fan" secondAttribute="centerX" id="vyB-JN-FHM"/>
+                            <constraint firstItem="VV1-IK-NHO" firstAttribute="top" secondItem="Cr2-PG-fan" secondAttribute="bottom" constant="24" id="wIX-n2-rpz"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstAttribute="bottomMargin" secondItem="SES-Rc-5pa" secondAttribute="bottom" constant="-4.5" id="O4m-Vx-KPf"/>
+                    <constraint firstItem="SES-Rc-5pa" firstAttribute="centerX" secondItem="H2p-sc-9uM" secondAttribute="centerX" id="dbp-j8-W5q"/>
+                    <constraint firstItem="SES-Rc-5pa" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="8" id="mJJ-yP-jM4"/>
+                    <constraint firstItem="SES-Rc-5pa" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="-4" id="mXR-FT-H2O"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="bgView" destination="SES-Rc-5pa" id="47b-zP-fAl"/>
+                <outlet property="btnCommentShow" destination="VV1-IK-NHO" id="2ry-xK-vAF"/>
+            </connections>
+            <point key="canvasLocation" x="158" y="232"/>
+        </tableViewCell>
+    </objects>
+</document>

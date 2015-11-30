@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NotoSansHans-DemiLight.otf">
+            <string>NotoSansHans-DemiLight</string>
+            <string>NotoSansHans-DemiLight</string>
+            <string>NotoSansHans-DemiLight</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="topCellIdentifier" rowHeight="99" id="KGk-i7-Jjw" customClass="TopViewCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="92"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="91.5"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8250" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="0cg-YG-QjB" userLabel="lbLikeNum">
+                        <rect key="frame" x="26" y="30" width="42" height="16"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="42" id="ZGX-8H-obc"/>
+                            <constraint firstAttribute="height" constant="16" id="dYs-ya-wZ6"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NotoSansHans-DemiLight" family="Noto Sans S Chinese" pointSize="9"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="viewedNum" translatesAutoresizingMaskIntoConstraints="NO" id="wwa-I3-Web">
+                        <rect key="frame" x="8" y="30" width="15" height="15"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="15" id="NuQ-7m-MeV"/>
+                            <constraint firstAttribute="height" constant="15" id="fiY-87-V5U"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="12.50" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="EI1-zX-bN6" userLabel="Time">
+                        <rect key="frame" x="230" y="30" width="82" height="16"/>
+                        <animations/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="82" id="Lrx-Kd-RJ9"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" name="NotoSansHans-DemiLight" family="Noto Sans S Chinese" pointSize="9"/>
+                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fvv-xY-0se" userLabel="bgView">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="8585" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="nQP-1S-fmC" userLabel="lbTitle">
+                                <rect key="frame" x="16" y="47" width="288" height="44"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="cWH-c5-CkV"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="NotoSansHans-DemiLight" family="Noto Sans S Chinese" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <animations/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="nQP-1S-fmC" firstAttribute="bottom" secondItem="Fvv-xY-0se" secondAttribute="bottomMargin" id="6fl-Zu-slM"/>
+                            <constraint firstItem="nQP-1S-fmC" firstAttribute="centerX" secondItem="Fvv-xY-0se" secondAttribute="centerX" id="Ryp-gc-QZj"/>
+                            <constraint firstItem="nQP-1S-fmC" firstAttribute="leading" secondItem="Fvv-xY-0se" secondAttribute="leading" constant="16" id="jct-hf-46l"/>
+                            <constraint firstItem="nQP-1S-fmC" firstAttribute="top" secondItem="Fvv-xY-0se" secondAttribute="top" constant="47" id="kCJ-jX-rqf"/>
+                            <constraint firstAttribute="bottom" secondItem="nQP-1S-fmC" secondAttribute="bottom" constant="8" id="mqe-b4-ImE"/>
+                        </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="mqe-b4-ImE"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </subviews>
+                <animations/>
+                <constraints>
+                    <constraint firstItem="wwa-I3-Web" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="0Bt-fl-mdK"/>
+                    <constraint firstItem="EI1-zX-bN6" firstAttribute="trailing" secondItem="H2p-sc-9uM" secondAttribute="trailingMargin" id="8BE-mO-lmf"/>
+                    <constraint firstItem="Fvv-xY-0se" firstAttribute="leading" secondItem="0cg-YG-QjB" secondAttribute="trailing" constant="-68" id="8w3-UM-f8W"/>
+                    <constraint firstItem="Fvv-xY-0se" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="AqA-lY-57Q"/>
+                    <constraint firstItem="EI1-zX-bN6" firstAttribute="bottom" secondItem="wwa-I3-Web" secondAttribute="bottom" constant="1" id="BoV-dT-wah"/>
+                    <constraint firstItem="Fvv-xY-0se" firstAttribute="top" secondItem="wwa-I3-Web" secondAttribute="bottom" constant="-45" id="CJt-XC-SwH"/>
+                    <constraint firstItem="Fvv-xY-0se" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Rdk-oE-b7W"/>
+                    <constraint firstAttribute="bottom" secondItem="Fvv-xY-0se" secondAttribute="bottom" constant="-7" id="WYa-bA-u0D"/>
+                    <constraint firstItem="Fvv-xY-0se" firstAttribute="leading" secondItem="wwa-I3-Web" secondAttribute="trailing" constant="-23" id="aw9-El-bey"/>
+                    <constraint firstItem="0cg-YG-QjB" firstAttribute="leading" secondItem="wwa-I3-Web" secondAttribute="trailing" constant="3" id="dIF-XN-xKz"/>
+                    <constraint firstAttribute="trailing" secondItem="Fvv-xY-0se" secondAttribute="trailing" id="eIL-aH-7c9"/>
+                    <constraint firstItem="EI1-zX-bN6" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="topMargin" constant="22" id="fBe-CH-I9g"/>
+                    <constraint firstItem="Fvv-xY-0se" firstAttribute="top" secondItem="0cg-YG-QjB" secondAttribute="bottom" constant="-46" id="rsh-tb-Zaa"/>
+                </constraints>
+            </tableViewCellContentView>
+            <animations/>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+            <connections>
+                <outlet property="lbLikeNum" destination="0cg-YG-QjB" id="zuD-33-W1p"/>
+                <outlet property="lbTime" destination="EI1-zX-bN6" id="Nxf-1f-cIY"/>
+                <outlet property="lbTitle" destination="nQP-1S-fmC" id="eXI-E9-ASX"/>
+            </connections>
+            <point key="canvasLocation" x="394" y="261"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="viewedNum" width="15" height="15"/>
+    </resources>
+</document>

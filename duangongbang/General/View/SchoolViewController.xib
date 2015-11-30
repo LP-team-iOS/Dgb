@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="9059" systemVersion="15B42" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9049"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <mutableArray key="NotoSansHans-DemiLight.otf">
+            <string>NotoSansHans-DemiLight</string>
+            <string>NotoSansHans-DemiLight</string>
+            <string>NotoSansHans-DemiLight</string>
+        </mutableArray>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SchoolViewController">
+            <connections>
+                <outlet property="_btnLocation" destination="bC5-OV-hUu" id="kNs-ym-3EU"/>
+                <outlet property="_btnOtherCity" destination="Aqt-as-Wjc" id="6kh-IL-bug"/>
+                <outlet property="_lbLocationCity" destination="ar5-SB-9bk" id="Eno-NR-XQV"/>
+                <outlet property="_schoolTableView" destination="NQE-2b-2AF" id="FDf-u2-o4p"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" translatesAutoresizingMaskIntoConstraints="NO" id="NQE-2b-2AF">
+                    <rect key="frame" x="0.0" y="52" width="320" height="516"/>
+                    <animations/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                    <connections>
+                        <outlet property="dataSource" destination="-1" id="wUg-TX-gxf"/>
+                        <outlet property="delegate" destination="-1" id="fx9-Et-jS0"/>
+                    </connections>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eZx-d0-3Wd">
+                    <rect key="frame" x="0.0" y="0.0" width="320" height="52"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Aqt-as-Wjc">
+                            <rect key="frame" x="249" y="11" width="63" height="30"/>
+                            <animations/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="63" id="Cig-cM-bCW"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NotoSansHans-DemiLight" family="Noto Sans S Chinese" pointSize="14"/>
+                            <state key="normal" title="其他城市">
+                                <color key="titleColor" red="0.37254901959999998" green="0.37254901959999998" blue="0.37254901959999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bC5-OV-hUu">
+                            <rect key="frame" x="8" y="14" width="71" height="24"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.21960784310000001" green="0.52549019610000003" blue="0.74509803919999995" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="71" id="Fbu-cG-Wg5"/>
+                                <constraint firstAttribute="height" constant="24" id="l1S-zD-rQS"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NotoSansHans-DemiLight" family="Noto Sans S Chinese" pointSize="14"/>
+                            <state key="normal" title="选择城市">
+                                <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                            </state>
+                        </button>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ar5-SB-9bk">
+                            <rect key="frame" x="79" y="14" width="58" height="24"/>
+                            <animations/>
+                            <color key="backgroundColor" red="0.0078431372550000003" green="0.6588235294" blue="0.95294117649999999" alpha="1" colorSpace="calibratedRGB"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="58" id="BxG-xg-7oX"/>
+                                <constraint firstAttribute="height" constant="24" id="Eun-1L-dnp"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="NotoSansHans-DemiLight" family="Noto Sans S Chinese" pointSize="14"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <animations/>
+                    <color key="backgroundColor" red="0.96470588239999999" green="0.96470588239999999" blue="0.96470588239999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="Aqt-as-Wjc" secondAttribute="trailing" constant="8" id="29F-VN-2QS"/>
+                        <constraint firstItem="ar5-SB-9bk" firstAttribute="leading" secondItem="bC5-OV-hUu" secondAttribute="trailing" id="CNn-UR-lg5"/>
+                        <constraint firstItem="bC5-OV-hUu" firstAttribute="leading" secondItem="eZx-d0-3Wd" secondAttribute="leading" constant="8" id="DVN-6b-6XR"/>
+                        <constraint firstItem="bC5-OV-hUu" firstAttribute="top" secondItem="eZx-d0-3Wd" secondAttribute="top" constant="14" id="Kzc-hR-3sX"/>
+                        <constraint firstItem="ar5-SB-9bk" firstAttribute="top" secondItem="eZx-d0-3Wd" secondAttribute="top" constant="14" id="NHV-H6-0ni"/>
+                        <constraint firstItem="Aqt-as-Wjc" firstAttribute="top" secondItem="eZx-d0-3Wd" secondAttribute="top" constant="11" id="qun-6M-CG3"/>
+                        <constraint firstAttribute="height" constant="52" id="tRt-CE-5mv"/>
+                        <constraint firstAttribute="bottom" secondItem="Aqt-as-Wjc" secondAttribute="bottom" constant="11" id="zuw-yn-NMc"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <animations/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="eZx-d0-3Wd" secondAttribute="trailing" id="5Dg-IV-LFt"/>
+                <constraint firstItem="eZx-d0-3Wd" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="8M6-ep-ncm"/>
+                <constraint firstAttribute="bottom" secondItem="NQE-2b-2AF" secondAttribute="bottom" id="FMU-LX-VWU"/>
+                <constraint firstAttribute="trailing" secondItem="NQE-2b-2AF" secondAttribute="trailing" id="L6D-s9-qXB"/>
+                <constraint firstItem="NQE-2b-2AF" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="fWq-LN-IGs"/>
+                <constraint firstItem="NQE-2b-2AF" firstAttribute="top" secondItem="eZx-d0-3Wd" secondAttribute="bottom" id="fXg-QY-2VX"/>
+                <constraint firstItem="eZx-d0-3Wd" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xAZ-Y6-u7T"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+        </view>
+    </objects>
+</document>
